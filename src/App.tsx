@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router"
 import { ThemeProvider } from "./components/theme-provider"
 import LoadingPage from "./pages/LoadingPage"
 import LoginPage from "./pages/LoginPage"
+import RegistrationPage from "./pages/RegistrationPage"
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
           <Routes>
              <Route path="/" element={<LoadingPage />} />
              <Route path="/login" element={<LoginPage />} />
+             <Route path="/registration" element={<RegistrationPage />} />
           </Routes>
         </div>
       </ThemeProvider>
